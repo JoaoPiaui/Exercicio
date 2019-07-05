@@ -71,7 +71,7 @@ namespace Repositorio
 
             if (tabela.Rows.Count == 1)
             {
-                DataRow linha = tabela.Rows[i];
+                DataRow linha = tabela.Rows[0];
                 Escola escola = new Escola();
                 escola.Id = Convert.ToInt32(linha["id"]);
                 escola.Nome = linha["nome"].ToString();

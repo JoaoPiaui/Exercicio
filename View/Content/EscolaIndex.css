@@ -1,0 +1,24 @@
+﻿body {
+    font-family: 'Mountains of Christmas', cursive;
+    background-color: lightskyblue;
+    text-align: center;
+}
+
+table {
+    width: 90%;
+    border: groove solid;
+    margin-left: 5%;
+}
+
+th {
+    background-color: darkgray;
+}
+
+tr {
+    height: 30px;
+}
+
+tr, th {
+    border: 1px solid black;
+}
+

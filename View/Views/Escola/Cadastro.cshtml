@@ -1,0 +1,33 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Cadastro</title>
+</head>
+<body>
+    <div class="div-titulo">
+        <a href="/escola" class="titulo">Lista de Escola</a>
+        <link href="~/Content/EscolaCadastro.css" rel="stylesheet" />
+    </div>
+
+    <form action="/escola/store" method="post">
+        <div class="div-campo">
+            <label for="campo-nome">Nome</label>
+            <input type="text" name="nome"
+                   id="campo-nome"
+                   class="campo"/>
+        </div>
+        <div>
+            <button type="submit" class="botao">Salvar</button>
+        </div>
+    </form>
+
+
+</body>
+</html>

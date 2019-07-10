@@ -1,0 +1,59 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Cadastro</title>
+</head>
+<body>
+    <div> 
+        <a href="/ aluno" class="titulo">Lista de Alunos</a>
+    </div>
+
+    <form action="/aluno/Store" method="post">
+        <div>
+            <label for="campo-nome">Nome</label>
+            <input type="text" name="nome"
+                   id="campo-nome"
+                   class="campo"/>
+        </div>
+
+        <div>
+            <label for="campo-cpf">Cpf</label>
+            <input type="text" name="cpf"
+                   id="campo-cpf"
+                   class="campo"/>
+        </div>
+
+        <div>
+            <label for="campo-nota_1">Nota 1</label>
+            <input type="text" name="nota_1"
+                   id="campo-nota_1"
+                   class="campo"/>
+        </div>
+
+        <div>
+            <label for="campo-nota_2">Nota 2</label>
+            <input type="text" name="nota_2"
+                   id="campo-nota_2"
+                   class="campo"/>
+        </div>
+
+        <div>
+            <label for="campo-nota_3">Nota 3</label>
+            <input type="text" name="nota_3"
+                   id="campo-nota_3"
+                   class="campo"/>
+        </div>
+
+        <div>
+            <button type="submit" class="botao">Salvar</button>
+        </div>
+    </form>
+</body>
+</html>

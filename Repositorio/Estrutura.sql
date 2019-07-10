@@ -5,6 +5,7 @@ nome VARCHAR(100)
 
 
 
+DROP TABLE alunos;
 CREATE TABLE alunos(
 id INT PRIMARY KEY IDENTITY(1,1),
 nome VARCHAR (100),
@@ -12,4 +13,4 @@ cpf VARCHAR (14),
 nota_1 DECIMAL(4,2),
 nota_2 DECIMAL(4,2),
 nota_3 DECIMAL(4,2)
-);
+); 

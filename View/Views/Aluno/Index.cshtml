@@ -1,0 +1,59 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        <a href="/aluno/cadastro"
+           id="botao-cadatro"
+           >Cadastro Aluno</a>
+    </div>
+
+    <table>
+        <thead>
+        <tr>
+           <th>Código</th>
+            <th>Nome</th>
+            <th>Cpf</th>
+            <th>Nota 1</th>
+            <th>Nota 2</th>
+            <th>Nota 3</th>
+            <th>Ação</th>
+        </tr>
+
+        </thead>
+        <tbody>
+            @for (int i = 0; i < ViewBag.alunos.Count; i++)
+            {
+                <tr>
+                <td>@ViewBag.alunos[i].id/td>
+                <td>@ViewBag.alunos[i].Nome/td>
+                <td>@ViewBag.alunos[i].Cpf/td>
+                <td>@ViewBag.alunos[i].Nota1/td>
+                <td>@ViewBag.alunos[i].Nota2/td>
+                <td>@ViewBag.alunos[i].Nota3/td>
+                </tr>
+            }
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Código</th>
+                <th>Nome</th>
+                <th>Cpf</th>
+                <th>Nota 1</th>
+                <th>Nota 2</th>
+                <th>Nota 3</th>
+                <th>Ação</th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
